@@ -16,7 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/dashboard', function () {
     return view('dashboard/index');
+});
+Route::get('/inventory', function () {
+    return view('inventory/index');
+});
+Route::get('/purchase_order', function () {
+    return view('purchase_order/index');
+});
+Route::get('/retur_receipt', function () {
+    return view('retur_receipt/index');
+});
+Route::get('/stock_opname', function () {
+    return view('stock_opname/index');
+});
+Route::get('/transaksi', function () {
+    return view('transaksi/index');
+});
+Route::get('/user_jabatan', function () {
+    return view('user_jabatan/index');
+});
+Route::get('/inventory', function () {
+    return view('inventory/index');
 });
