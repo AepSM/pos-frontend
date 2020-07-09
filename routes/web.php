@@ -40,3 +40,7 @@ Route::get('/user_jabatan', function () {
 Route::get('/inventory', function () {
     return view('inventory/index');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
